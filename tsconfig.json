@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDirs": ["src"],
+    "target": "es2021", //(ECMAScript5 ECMAScript2014) (TypeScript suporta até o EcmaScript2021)
+    "sourceMap": true,
+    "skipLibCheck": true, //agiliza o processo de build, puldando verificações na pasta node_modules
+    "forceConsistentCasingInFileNames": true, // habilita a verificação de consistencia no import de classes (../controller != ../Controller)
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "strict": true,
+    /* "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false */
+  },
+  "include": ["src"]
+}
